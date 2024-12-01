@@ -6,7 +6,8 @@ disable=
       C0116,
       W0703,
       C0209,
-      E0015
+      E0015,
+      W0012
 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
