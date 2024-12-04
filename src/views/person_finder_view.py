@@ -4,7 +4,7 @@ from src.controllers.interfaces.person_finder_controller import PersonFinderCont
 from .interfaces.view_interface import ViewInterface
 
 
-class PersonCreatorView(ViewInterface):
+class PersonFinderView(ViewInterface):
     def __init__(self, controller: PersonFinderControllerInterface) -> None:
         self.__controller = controller
 
