@@ -59,7 +59,7 @@ def test_delete_pet():
     mock_connection = MockConnection()
     repo = PetsRepository(mock_connection)
 
-    repo.delete_pet("petName")
+    repo.delete_pets("petName")
 
     mock_connection.session.query.assert_called_once_with(PetsTable)
     mock_connection.session.filter.assert_called_once_with(
@@ -84,6 +84,6 @@ def test_delete_pet_error():
     repo = PetsRepository(mock_connection)
 
     with raises(Exception):
-        repo.delete_pet("petName")
+        repo.delete_pets("petName")
 
     mock_connection.session.rollback.assert_called_once()
