@@ -162,7 +162,7 @@ cython_debug/
 #.idea/
 
 # this project files
-storage*.db
+storage-*.db
 **/__pycache__
 .pytest_cache
 tools/
